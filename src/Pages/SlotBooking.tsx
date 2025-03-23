@@ -6,7 +6,7 @@ const SlotBooking = () => {
   const navigate = useNavigate();
   const { locationId } = useParams();
   const [selectedSlot, setSelectedSlot] = useState<string | null>(null);
-
+   
   // Mock data for parking slots
   const slots = Array.from({ length: 20 }, (_, i) => ({
     id: `${i + 1}`,
@@ -15,6 +15,7 @@ const SlotBooking = () => {
 
   const handleSlotSelect = (slotId: string) => {
     setSelectedSlot(slotId);
+    console.log(locationId)
   };
 
   const handleBooking = () => {

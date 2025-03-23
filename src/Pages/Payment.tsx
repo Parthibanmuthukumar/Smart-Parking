@@ -93,11 +93,7 @@ const Payment = () => {
             </div>
             
             <div className="bg-white p-8 rounded-lg inline-block mb-6">
-              <QrCode
-               value={`parking-${slotId}-${vehicleNumber}`}
-                size={200}
-                level="H"
-              />
+
             </div>
             
             <p className="text-sm text-gray-600 mb-6">

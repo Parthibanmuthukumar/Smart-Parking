@@ -12,8 +12,7 @@ const Registration = () => {
     aadhar: '',
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     // Here you would typically handle the registration process
     navigate('/locations');
     console.log(setStep)
